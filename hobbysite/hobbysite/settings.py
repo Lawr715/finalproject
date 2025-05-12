@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-p#47_+(v7mznxbf4ayde!ou)$q_zd&j=k(7(12(ddq#2))n!g2
 DEBUG = True
 
 # Allow Azure host (update with actual app URL in production)
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['pleasework.azurewebsites.net', 'localhost']
 
 # Application definition
 INSTALLED_APPS = [
