@@ -12,7 +12,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
 
 
 # Allow Azure host (update with actual app URL in production)
-ALLOWED_HOSTS = ['pleasework.azurewebsites.net', 'localhost','pleasework-h6bqguh8c9d9eads.southeastasia-01.azurewebsites.net']
+ALLOWED_HOSTS = ['idkanymore.azurewebsites.net', 'localhost','idkanymore-ajfqd7fpace8e4gu.southeastasia-01.azurewebsites.net']
 
 # Application definition
 INSTALLED_APPS = [
