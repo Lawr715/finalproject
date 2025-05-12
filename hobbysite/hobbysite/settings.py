@@ -4,11 +4,12 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY WARNING: keep the secret key used in production!
-SECRET_KEY = 'django-insecure-p#47_+(v7mznxbf4ayde!ou)$q_zd&j=k(7(12(ddq#2))n!g2'
+# Get secret key from environment, fallback for local testing
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'django-insecure-p#47_+(v7mznxbf4ayde!ou)$q_zd&j=k(7(12(ddq#2))n!g2')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Use DEBUG=False unless explicitly set
+DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
+
 
 # Allow Azure host (update with actual app URL in production)
 ALLOWED_HOSTS = ['pleasework.azurewebsites.net', 'localhost','pleasework-h6bqguh8c9d9eads.southeastasia-01.azurewebsites.net']
